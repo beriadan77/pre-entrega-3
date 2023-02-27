@@ -1,299 +1,284 @@
 :root {
-
-    /* DESIGN SYSTEM COLOR PALETTE */
-    --c-primary: #FCA311;
-    --c-primary-l: #F1C47B;
-    --c-secondary: #14213D;
-    --c-tertiary: #FFFAF6;
-    --c-black: #0A111F;
-
-    /* DESIGN SYSTEM FONTS */
-    --c-font-primary: 'Exo', sans-serif;
-    --c-font-secondary: 'Turret Road', cursive;
-    
+  /* DESIGN SYSTEM COLOR PALETTE */
+  --c-primary: #FCA311;
+  --c-primary-l: #F1C47B;
+  --c-secondary: #14213D;
+  --c-tertiary: #FFFAF6;
+  --c-black: #0A111F;
+  /* DESIGN SYSTEM FONTS */
+  --c-font-primary: "Exo", sans-serif;
+  --c-font-secondary: "Turret Road", cursive;
 }
 
 /* MAIN TWEAKS */
-
 body {
-    background: var(--c-secondary);
-    font-family: var(--c-font-primary);
+  background: var(--c-secondary);
+  font-family: var(--c-font-primary);
 }
 
 /* NAV BAR */
 .navbar {
-    box-shadow: 0 2px 20px 0 var(--c-black);
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
-    margin: 1rem 1rem 1rem;
-    border-radius: 1rem;
-    border: 2px solid var(--c-primary);
-    
+  box-shadow: 0 2px 20px 0 var(--c-black);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  margin: 1rem 1rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid var(--c-primary);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--c-primary-l);
-    font-size: 1rem;
+  color: var(--c-primary-l);
+  font-size: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--c-tertiary);
+  color: var(--c-tertiary);
 }
 
 .navbar-brand {
-    font-family: var(--c-font-secondary);
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    color: var(--c-tertiary);
+  font-family: var(--c-font-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: var(--c-tertiary);
 }
 
-.btn-primary{
-    font-family: var(--c-font-secondary);
+.btn-primary {
+  font-family: var(--c-font-secondary);
 }
-
 
 /* **************** */
 /* *     HOME     * */
 /* **************** */
-
 .c-home-s2 {
-    background: var(--c-secondary);
+  background: var(--c-secondary);
 }
 
 .c-home-s3 {
-    position: relative;
-    isolation: isolate;
-    height: 15rem;
-    align-items: center;
+  position: relative;
+  isolation: isolate;
+  height: 15rem;
+  align-items: center;
 }
 
 .c-dream-t {
-    font-weight: bold;
-    color: var(--c-secondary);
-    mix-blend-mode:soft-light;
+  font-weight: bold;
+  color: var(--c-secondary);
+  mix-blend-mode: soft-light;
 }
 
 /* READY TO DREAM CANVAS EFFECT (USING JS) */
 .canvas-container {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 canvas {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* CAROUSEL ANIM */
 .carousel-inner .carousel-item > img {
-    object-fit: cover;
-    animation: zoomin 20s ease-in-out infinite;
-    
+  object-fit: cover;
+  animation: zoomin 20s ease-in-out infinite;
 }
+
 @keyframes zoomin {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    100%{
-        transform: scale(1);
-
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
 /* HOME ACCORDIONS CUSTOMIZATION */
 .accordion-header {
-    font-family: var(--c-font-secondary);
+  font-family: var(--c-font-secondary);
 }
 
 .accordion-button {
-    background-color: var(--c-secondaryk)!important;
-    color: var(--c-primary)!important;
+  background-color: var(--c-secondaryk) !important;
+  color: var(--c-primary) !important;
 }
 
 .accordion-item {
-    border-color: var(--c-primary-l);
+  border-color: var(--c-primary-l);
 }
 
 .accordion-body {
-    background-color: var(--c-black)!important;
-    color: var(--c-tertiary)!important; 
-    
+  background-color: var(--c-black) !important;
+  color: var(--c-tertiary) !important;
 }
-
 
 /* **************** */
 /* *  ABOUT PAGE  * */
 /* **************** */
-
 .c-about h2 {
-    font-family: var(--c-font-secondary);
+  font-family: var(--c-font-secondary);
 }
 
 .c-about {
-    padding: 2rem;
-    
+  padding: 2rem;
 }
 
 /* SOFT ZOOM EFFECT FOR IMAGES */
 .interactable {
-    overflow: hidden;
-    background-color: #0A111F;
-    border-radius: 1rem;
-    
+  overflow: hidden;
+  background-color: #0A111F;
+  border-radius: 1rem;
 }
+
 .interactable img {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;    
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
 }
+
 .interactable:hover img {
-    transform: scale(1.3);
-    filter: brightness(140%);
+  transform: scale(1.3);
+  filter: brightness(140%);
 }
 
 .c-about-s2 {
-    height: 15rem;
-    align-items: center;
-    position:relative;
-    overflow: hidden;
+  height: 15rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.gradient-background{
-    background:
-        linear-gradient(red, transparent),
-        linear-gradient(to top left, lime, transparent),
-        linear-gradient(to top right, blue, transparent);
-    background-blend-mode: screen;
+.gradient-background {
+  background: linear-gradient(red, transparent), linear-gradient(to top left, lime, transparent), linear-gradient(to top right, blue, transparent);
+  background-blend-mode: screen;
 }
 
 /* ALTERNATIVE TITLE EFFECT */
 .video-bg {
-    position:absolute; 
-    min-width:100%;
-    min-height:100%;
-    mix-blend-mode:luminosity;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  mix-blend-mode: luminosity;
 }
 
 /* FIXED BACKGROUND PARAGRAPH */
 .c-about-s4 {
-    background-image: url("../images/about-4.png");
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("../images/about-4.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-
-
 /* FOOTER */
-
-footer{
-    background-color: var(--c-secondary);
-    padding: 1rem;
+footer {
+  background-color: var(--c-secondary);
+  padding: 1rem;
 }
 
 footer h5 {
-    font-family: var(--c-font-secondary);
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-    color: var(--c-primary);
+  font-family: var(--c-font-secondary);
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: var(--c-primary);
 }
 
 .c-footer-links {
-    color: var(--c-primary-l);
+  color: var(--c-primary-l);
 }
 
 .c-footer-links:hover, .btn-floating i:hover {
-    color: var(--c-tertiary);
+  color: var(--c-tertiary);
 }
 
 .btn-floating i {
-    color: var(--c-primary-l);
+  color: var(--c-primary-l);
 }
-
-
-
 
 /* CHANGE BS5 COLORS THROUGH CSS */
 .btn-primary {
-    cursor: pointer;
-    color: var(--c-secondary);
-    font-size: 1.1rem;
-    background-color: var(--c-primary-l);
-    padding: 0.6em 2em 0.5em 2em;
-    border: 0;
-    border-radius: 1.25rem;
-    transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  color: var(--c-secondary);
+  font-size: 1.1rem;
+  background-color: var(--c-primary-l);
+  padding: 0.6em 2em 0.5em 2em;
+  border: 0;
+  border-radius: 1.25rem;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-primary:hover {
-    background-color: var(--c-tertiary);
-    color: var(--c-black);
-    letter-spacing: 3px;
+  background-color: var(--c-tertiary);
+  color: var(--c-black);
+  letter-spacing: 3px;
 }
 
 .btn-primary:active {
-    background-color: var(--c-secondary)!important;
+  background-color: var(--c-secondary) !important;
 }
-
 
 /* MAGIC BUTTON ;-) */
 .glow-effect {
-    /* CUSTOMIZE BUTTON EFFECT HERE */
-    --glow-line-color: var(--c-tertiary);
-    --glow-line-thickness: 2px;
-    --glow-blur-color: var(--c-tertiary);
-    --glow-blur-size: 6px;
-    --animation-speed: 1700ms;
-
-    /* do not changesize meant for calculations */
-    --c-offset: 60px;
-    position: relative;
+  /* CUSTOMIZE BUTTON EFFECT HERE */
+  --glow-line-color: var(--c-tertiary);
+  --glow-line-thickness: 2px;
+  --glow-blur-color: var(--c-tertiary);
+  --glow-blur-size: 6px;
+  --animation-speed: 1700ms;
+  /* do not changesize meant for calculations */
+  --c-offset: 60px;
+  position: relative;
 }
 
 .glow-container {
-    pointer-events: none;
-    position: absolute;
-    inset: calc(var(--c-offset) / -2);
-    width: calc(100% + var(--c-offset));
-    height: calc(100% + var(--c-offset));
-    opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  inset: calc(var(--c-offset) / -2);
+  width: calc(100% + var(--c-offset));
+  height: calc(100% + var(--c-offset));
+  opacity: 0;
 }
 
 .glow-blur,
 .glow-line {
-    width:  calc(100% - var(--c-offset));
-    height:  calc(100% - var(--c-offset));
-    x: calc(var(--c-offset) / 2);
-    y: calc(var(--c-offset) / 2);
-    fill:transparent;
-    stroke-width: 10px;
-    stroke-dasharray: 80px 50px;
+  width: calc(100% - var(--c-offset));
+  height: calc(100% - var(--c-offset));
+  x: calc(var(--c-offset) / 2);
+  y: calc(var(--c-offset) / 2);
+  fill: transparent;
+  stroke-width: 10px;
+  stroke-dasharray: 80px 50px;
 }
 
 .glow-line {
-    stroke: var(--glow-line-color);
-    stroke-width: var(--glow-line-thickness);
+  stroke: var(--glow-line-color);
+  stroke-width: var(--glow-line-thickness);
 }
 
 .glow-blur {
-    filter: blur(var(--glow-blur-size));
-    stroke: var(--glow-blur-color);
-    stroke-width: var(--glow-blur-size);
+  filter: blur(var(--glow-blur-size));
+  stroke: var(--glow-blur-color);
+  stroke-width: var(--glow-blur-size);
 }
 
 .glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
-    stroke-dashoffset: -200px;
-    transition: stroke-dashoffset var(--animation-speed);
+  stroke-dashoffset: -200px;
+  transition: stroke-dashoffset var(--animation-speed);
 }
 
 .glow-effect:is(:hover, :focus) .glow-container {
-    animation: glow-visibility var(--animation-speed);
+  animation: glow-visibility var(--animation-speed);
 }
 
 @keyframes glow-visibility {
-    0%, 100% { opacity: 0 }
-    25%, 75% { opacity: 0.5 }
-    50% { opacity: 1 }
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
