@@ -1,56 +1,105 @@
-:root {
-  /* DESIGN SYSTEM COLOR PALETTE */
-  --c-primary: #FCA311;
-  --c-primary-l: #F1C47B;
-  --c-secondary: #14213D;
-  --c-tertiary: #FFFAF6;
-  --c-black: #0A111F;
-  /* DESIGN SYSTEM FONTS */
-  --c-font-primary: "Exo", sans-serif;
-  --c-font-secondary: "Turret Road", cursive;
+/* GENERAL TWEAKS */
+body {
+  background-color: #14213D;
+  background: "Turret Road", cursive;
+  font-family: "Exo", sans-serif;
 }
 
-/* MAIN TWEAKS */
-body {
-  background: var(--c-secondary);
-  font-family: var(--c-font-primary);
+.spacer {
+  width: 100%;
+  min-height: 1px;
+  margin-top: 100px;
+  display: inline-block;
+  position: relative;
 }
 
 /* NAV BAR */
 .navbar {
-  box-shadow: 0 2px 20px 0 var(--c-black);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 2px 20px 0 #0A111F;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   margin: 1rem 1rem 1rem;
   border-radius: 1rem;
-  border: 2px solid var(--c-primary);
+  border: 2px solid #FCA311;
+}
+
+.darkener {
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(10, 17, 31, 0.8), rgba(10, 17, 31, 0.5));
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: var(--c-primary-l);
+  color: #F1C47B;
   font-size: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: var(--c-tertiary);
+  color: #FFFAF6;
 }
 
 .navbar-brand {
-  font-family: var(--c-font-secondary);
+  font-family: "Turret Road", cursive;
   font-size: 1.5rem;
   letter-spacing: 3px;
-  color: var(--c-tertiary);
+  color: #FFFAF6;
+}
+
+/* FOOTER */
+footer {
+  background-color: #14213D;
+  padding: 1rem;
+}
+footer h5 {
+  font-family: "Turret Road", cursive;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: #FCA311;
+}
+
+.c-footer-links {
+  color: #F1C47B;
+}
+.c-footer-links:hover {
+  color: #FFFAF6;
+}
+
+.btn-floating i {
+  color: #F1C47B;
+}
+.btn-floating i:hover {
+  color: #FFFAF6;
 }
 
 .btn-primary {
-  font-family: var(--c-font-secondary);
+  font-family: "Turret Road", cursive;
+  cursor: pointer;
+  color: #14213D;
+  font-size: 1.1rem;
+  background-color: #F1C47B;
+  padding: 0.6em 2em 0.5em 2em;
+  border: 0;
+  border-radius: 1.25rem;
+  transition: all 0.4s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #FFFAF6;
+  color: #0A111F;
+  letter-spacing: 3px;
+}
+.btn-primary:active {
+  background-color: #14213D !important;
 }
 
 /* **************** */
 /* *     HOME     * */
 /* **************** */
 .c-home-s2 {
-  background: var(--c-secondary);
+  background: #14213D;
 }
 
 .c-home-s3 {
@@ -62,7 +111,7 @@ body {
 
 .c-dream-t {
   font-weight: bold;
-  color: var(--c-secondary);
+  color: #14213D;
   mix-blend-mode: soft-light;
 }
 
@@ -97,28 +146,28 @@ canvas {
 }
 /* HOME ACCORDIONS CUSTOMIZATION */
 .accordion-header {
-  font-family: var(--c-font-secondary);
+  font-family: "Turret Road", cursive;
 }
 
 .accordion-button {
-  background-color: var(--c-secondaryk) !important;
-  color: var(--c-primary) !important;
+  background-color: #14213D !important;
+  color: #FCA311 !important;
 }
 
 .accordion-item {
-  border-color: var(--c-primary-l);
+  border-color: #F1C47B;
 }
 
 .accordion-body {
-  background-color: var(--c-black) !important;
-  color: var(--c-tertiary) !important;
+  background-color: #0A111F !important;
+  color: #FFFAF6 !important;
 }
 
 /* **************** */
 /* *  ABOUT PAGE  * */
 /* **************** */
 .c-about h2 {
-  font-family: var(--c-font-secondary);
+  font-family: "Turret Road", cursive;
 }
 
 .c-about {
@@ -169,104 +218,65 @@ canvas {
   background-attachment: fixed;
 }
 
-/* FOOTER */
-footer {
-  background-color: var(--c-secondary);
-  padding: 1rem;
+.card {
+  overflow: hidden;
+  transform: scale(1);
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 20px 0 #0A111F;
+  transition: all 0.2s ease-in-out;
 }
 
-footer h5 {
-  font-family: var(--c-font-secondary);
-  font-size: 1.2rem;
-  letter-spacing: 3px;
-  color: var(--c-primary);
-}
-
-.c-footer-links {
-  color: var(--c-primary-l);
-}
-
-.c-footer-links:hover, .btn-floating i:hover {
-  color: var(--c-tertiary);
-}
-
-.btn-floating i {
-  color: var(--c-primary-l);
-}
-
-/* CHANGE BS5 COLORS THROUGH CSS */
-.btn-primary {
-  cursor: pointer;
-  color: var(--c-secondary);
-  font-size: 1.1rem;
-  background-color: var(--c-primary-l);
-  padding: 0.6em 2em 0.5em 2em;
-  border: 0;
-  border-radius: 1.25rem;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn-primary:hover {
-  background-color: var(--c-tertiary);
-  color: var(--c-black);
-  letter-spacing: 3px;
-}
-
-.btn-primary:active {
-  background-color: var(--c-secondary) !important;
+.card-title {
+  color: #FCA311;
 }
 
 /* MAGIC BUTTON ;-) */
+/* CUSTOMIZE BUTTON EFFECT HERE */
+/* do not changesize meant for calculations */
 .glow-effect {
-  /* CUSTOMIZE BUTTON EFFECT HERE */
-  --glow-line-color: var(--c-tertiary);
-  --glow-line-thickness: 2px;
-  --glow-blur-color: var(--c-tertiary);
-  --glow-blur-size: 6px;
-  --animation-speed: 1700ms;
-  /* do not changesize meant for calculations */
-  --c-offset: 60px;
   position: relative;
 }
 
 .glow-container {
   pointer-events: none;
   position: absolute;
-  inset: calc(var(--c-offset) / -2);
-  width: calc(100% + var(--c-offset));
-  height: calc(100% + var(--c-offset));
+  inset: -30px;
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
   opacity: 0;
 }
 
 .glow-blur,
 .glow-line {
-  width: calc(100% - var(--c-offset));
-  height: calc(100% - var(--c-offset));
-  x: calc(var(--c-offset) / 2);
-  y: calc(var(--c-offset) / 2);
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  x: 30px;
+  y: 30px;
   fill: transparent;
   stroke-width: 10px;
   stroke-dasharray: 80px 50px;
 }
 
 .glow-line {
-  stroke: var(--glow-line-color);
-  stroke-width: var(--glow-line-thickness);
+  stroke: #FFFAF6;
+  stroke-width: 2px;
 }
 
 .glow-blur {
-  filter: blur(var(--glow-blur-size));
-  stroke: var(--glow-blur-color);
-  stroke-width: var(--glow-blur-size);
+  filter: blur(10px);
+  stroke: #FFFAF6;
+  stroke-width: 10px;
 }
 
 .glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
   stroke-dashoffset: -200px;
-  transition: stroke-dashoffset var(--animation-speed);
+  transition: stroke-dashoffset 1700ms;
 }
 
 .glow-effect:is(:hover, :focus) .glow-container {
-  animation: glow-visibility var(--animation-speed);
+  animation: glow-visibility 1700ms;
 }
 
 @keyframes glow-visibility {
