@@ -78,13 +78,35 @@ footer{
 
 .btn-floating {
     i {
+        background-color: $secondary;
+
         color: $light;
         
         &:hover {
             color: $success;
         }
+    }   
+}
+
+.form-control {
+    background-color: $light;
+    color: $dark;
+
+    &:focus {
+        background-color: $primary;
+        color: $dark;
+        border-color: $primary;
     }
-    
+}
+
+.btn-danger {
+    background-color: $secondary;
+    border-color: $secondary;
+
+    &:hover {
+        background-color: $dark;
+        border-color: $primary;
+    }
 }
 
 .btn-primary {

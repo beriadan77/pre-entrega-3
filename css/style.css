@@ -69,10 +69,30 @@ footer h5 {
 }
 
 .btn-floating i {
+  background-color: #14213D;
   color: #F1C47B;
 }
 .btn-floating i:hover {
   color: #FFFAF6;
+}
+
+.form-control {
+  background-color: #F1C47B;
+  color: #0A111F;
+}
+.form-control:focus {
+  background-color: #FCA311;
+  color: #0A111F;
+  border-color: #FCA311;
+}
+
+.btn-danger {
+  background-color: #14213D;
+  border-color: #14213D;
+}
+.btn-danger:hover {
+  background-color: #0A111F;
+  border-color: #FCA311;
 }
 
 .btn-primary {
@@ -221,15 +241,42 @@ canvas {
 .card {
   overflow: hidden;
   transform: scale(1);
+  box-shadow: 0 0px 0px 0 #0A111F;
+  color: #FFFAF6;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 2px 20px 0 #0A111F;
-  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px 20px 0 #0A111F;
+  border-color: #F1C47B !important;
 }
 
-.card-title {
+.card-title,
+.modal-title {
   color: #FCA311;
+}
+
+.modal-xl {
+  color: #FFFAF6;
+}
+.modal-xl .modal-content {
+  background-color: #14213D;
+  border-color: #F1C47B !important;
+}
+
+.blog-image {
+  overflow: hidden;
+}
+.blog-image img {
+  width: clamp(100px, 100%, 1200px);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.btn-secondary:hover {
+  background-color: #FCA311 !important;
+  color: #14213D;
 }
 
 /* MAGIC BUTTON ;-) */
