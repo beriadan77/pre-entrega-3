@@ -1,0 +1,49 @@
+.service-icon {
+    max-width: clamp(32px, 80%, 256px);
+    height: auto;
+    border-radius: 1rem;
+}
+
+.service-row {
+
+    border-radius: 1.5rem;
+    padding-left: 1rem;
+
+    &:hover {
+        background-color: $dark;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.text-detail {
+    color: $success;
+}
+
+.normal{
+    color: $light!important;
+}
+
+.icon-color {
+    color: $light;
+}
+
+.price-tag {
+    color: $primary;
+}
+
+.table-title {
+    color: $primary;
+}
+
+.table-warning {
+    border-color: $primary;
+    border-width: 3px;
+}
+
+/* FIXED BACKGROUND PARAGRAPH */
+.c-service-p {
+    background-image: url("../images/services.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

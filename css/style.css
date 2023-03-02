@@ -68,6 +68,10 @@ footer h5 {
   color: #FFFAF6;
 }
 
+.modal-content {
+  background-color: #14213D;
+}
+
 .btn-floating i {
   background-color: #14213D;
   color: #F1C47B;
@@ -87,8 +91,9 @@ footer h5 {
 }
 
 .btn-danger {
-  background-color: #14213D;
-  border-color: #14213D;
+  background-color: #0A111F;
+  border-color: #0A111F;
+  color: #F1C47B;
 }
 .btn-danger:hover {
   background-color: #0A111F;
@@ -203,6 +208,7 @@ canvas {
 
 .interactable img {
   transform: scale(1.2);
+  background-position: center;
   transition: all 0.2s ease-in-out;
 }
 
@@ -235,6 +241,54 @@ canvas {
 .c-about-s4 {
   background-image: url("../images/about-4.png");
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.service-icon {
+  max-width: clamp(32px, 80%, 256px);
+  height: auto;
+  border-radius: 1rem;
+}
+
+.service-row {
+  border-radius: 1.5rem;
+  padding-left: 1rem;
+}
+.service-row:hover {
+  background-color: #0A111F;
+  transition: 0.3s ease-in-out;
+}
+
+.text-detail {
+  color: #FFFAF6;
+}
+
+.normal {
+  color: #F1C47B !important;
+}
+
+.icon-color {
+  color: #F1C47B;
+}
+
+.price-tag {
+  color: #FCA311;
+}
+
+.table-title {
+  color: #FCA311;
+}
+
+.table-warning {
+  border-color: #FCA311;
+  border-width: 3px;
+}
+
+/* FIXED BACKGROUND PARAGRAPH */
+.c-service-p {
+  background-image: url("../images/services.png");
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -277,6 +331,16 @@ canvas {
 .btn-secondary:hover {
   background-color: #FCA311 !important;
   color: #14213D;
+}
+
+.form-title {
+  color: #FCA311;
+}
+
+.contact-image {
+  max-width: clamp(300px, 100%, 500px);
+  height: auto;
+  border-radius: 1rem;
 }
 
 /* MAGIC BUTTON ;-) */

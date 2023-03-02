@@ -76,6 +76,11 @@ footer{
     }
 }
 
+
+.modal-content {
+    background-color: $secondary;
+}
+
 .btn-floating {
     i {
         background-color: $secondary;
@@ -100,8 +105,9 @@ footer{
 }
 
 .btn-danger {
-    background-color: $secondary;
-    border-color: $secondary;
+    background-color: $dark;
+    border-color: $dark;
+    color: $light;
 
     &:hover {
         background-color: $dark;
@@ -130,4 +136,5 @@ footer{
     }
 
 }
+
 

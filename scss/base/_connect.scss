@@ -1,0 +1,8 @@
+.form-title {
+    color: $primary;
+}
+.contact-image {
+    max-width: clamp(300px, 100%, 500px);
+    height: auto;
+    border-radius: 1rem;
+}
