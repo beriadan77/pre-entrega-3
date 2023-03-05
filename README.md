@@ -11,3 +11,5 @@ Pre entrega 3 - CoderHouse - Comision 39240
 * Incorporación de FLEXBOX sin Bootstrap5 en página de servicios, como bloques de icono+título+imagen adaptables.
 * Implementación de un mixin que utiliza una variable de color y un porcentage de opacidad para modificar el color base, utilizado en las cards de reviews de usuaruios, página de contacto.
 * Incorporación de SEO a las 5 páginas, ajuste de título de página para ser más informativo.
+* Incorporación y revisión de animaciones previas para mejorar la experiencia y hacerla consistente entre las páginas, botones, cards, etc.
+
