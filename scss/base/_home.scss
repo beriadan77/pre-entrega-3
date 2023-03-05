@@ -19,18 +19,6 @@
     mix-blend-mode:soft-light;
 }
 
-/* READY TO DREAM CANVAS EFFECT (USING JS) */
-.canvas-container {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-}
-
-canvas {
-    width: 100%;
-    height: 100%;
-}
-
 /* CAROUSEL ANIM */
 .carousel-inner .carousel-item > img {
     object-fit: cover;
@@ -68,4 +56,54 @@ canvas {
     background-color: $dark!important;
     color: $success!important; 
     
+}
+
+// MARKEE
+
+/* animations */
+@-webkit-keyframes marquee {
+from {
+    transform: translateX(0);
+}
+to {
+    transform: translateX(-100%);
+}
+}
+@keyframes marquee {
+from {
+    transform: translateX(7%);
+}
+to {
+    transform: translateX(-100%);
+}
+}
+@keyframes color-change {
+    0%,100% { color: $primary; }
+    30%,80% { color: #fff }
+  }
+
+/* scroller styles */
+.marquee {
+    animation: color-change 1s infinite;
+    font-size: 4rem;
+    height: 6rem;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+}
+.track {
+    height: 100%;
+    overflow: hidden;
+    padding: 0rem 0;
+    position: absolute;
+    transition: background-color 300ms ease, color 300ms ease;
+    white-space: nowrap;
+
+    .text {
+        -webkit-animation: marquee 50000ms linear infinite;
+        animation: marquee 50000ms linear infinite;
+        align-items: center;
+        display: inline-flex;
+        will-change: transform;
+    }
 }

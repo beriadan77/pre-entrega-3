@@ -1,18 +1,33 @@
-.service-icon {
-    max-width: clamp(32px, 80%, 256px);
-    height: auto;
+.c-services {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.c-service {
+    width: clamp(20rem, 30%, 40%);
+    padding: 1.5rem;
+    background: radial-gradient(farthest-corner at 75% 25%, transparent, $secondary);
+    background-color: #FFFAF622;
+    background-size: 200% 200%;
     border-radius: 1rem;
+    border: 1px solid transparent;
+    background-position:0% 50%;
+    transition: all 300ms;
+
+    &:hover{
+        background-color: #FFFAF633;
+        border: 1px solid $light;
+        background-position:100% 300%;
+        transform: scale(1.02);
+        box-shadow: 0 5px 20px 0 $dark;
+    }
 }
 
-.service-row {
-
-    border-radius: 1.5rem;
-    padding-left: 1rem;
-
-    &:hover {
-        background-color: $dark;
-        transition: 0.3s ease-in-out;
-    }
+.service-icon {
+    max-width: clamp(32px, 80%, 128px);
+    height: auto;
+    border-radius: 1rem;
 }
 
 .text-detail {
